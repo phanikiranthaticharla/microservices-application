@@ -8,13 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
+        <module name="vaccinationcenterservice" />
         <module name="citizenservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="citizenservice" target="1.8" />
       <module name="EurekaServer" target="1.8" />
-      <module name="eurekaserver" target="1.8" />
+      <module name="VaccinationCenter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -22,6 +22,7 @@
       <module name="EurekaServer" options="-parameters" />
       <module name="citizenservice" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
+      <module name="vaccinationcenterservice" options="-parameters" />
     </option>
   </component>
 </project>
