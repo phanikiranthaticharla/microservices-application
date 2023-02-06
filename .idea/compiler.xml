@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
+        <module name="api-gateway" />
         <module name="vaccinationcenterservice" />
         <module name="citizenservice" />
       </profile>
@@ -20,6 +21,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="EurekaServer" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
       <module name="citizenservice" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="vaccinationcenterservice" options="-parameters" />
