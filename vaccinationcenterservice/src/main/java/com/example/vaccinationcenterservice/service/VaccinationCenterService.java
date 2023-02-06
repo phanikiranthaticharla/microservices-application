@@ -33,7 +33,6 @@ public class VaccinationCenterService {
         vaccinationCenterDtoResponse.setCenterName(vaccinationCenter.getCenterName());
         vaccinationCenterDtoResponse.setCenterAddress(vaccinationCenter.getCenterAddress());
 
-        // CitizenDtoResponseList citizenDtoResponseList = restTemplate.getForObject(urlString, CitizenDtoResponseList.class);
         ResponseEntity<CitizenDtoResponse[]> response = restTemplate.getForEntity(String.format(urlString, id), CitizenDtoResponse[].class);
         CitizenDtoResponse[] citizenDtoResponseArray = response.getBody();
         List<CitizenDtoResponse> citizenDtoResponseList = Arrays.asList(citizenDtoResponseArray);
