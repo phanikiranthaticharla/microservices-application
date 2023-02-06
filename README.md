@@ -4,6 +4,7 @@ This is a SpringBoot microservices application written in Java 8 and built using
 - Citizen Microservice
 - Vaccination Center Microservice
 - Eureka Server
+- API Gateway
 
 ## Citizen Microservice
 This microservice is responsible for adding new citizens to a vaccination center and retrieving details of all citizens within a vaccination center based on ID.
@@ -23,6 +24,9 @@ Features:
 
 ## Eureka Server
 Eureka Server is used for service discovery in this microservices application. It acts as a registry for all microservices and provides a centralized mechanism for service discovery.
+
+## API Gateway
+Route the requests between citizen microservice and vaccination center microservice. 
 
 ## Running the Application
 To run the application, follow these steps:
